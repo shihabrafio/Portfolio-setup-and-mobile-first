@@ -11,7 +11,7 @@
   display: flex;
 }
 
-.nav {
+.head {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -19,7 +19,7 @@
   height: 72px;
 }
 
-.nav a {
+.head a {
   display: flex;
   align-items: center;
   text-align: center;
@@ -30,9 +30,10 @@
   line-height: 20px;
   margin-left: 24px;
   margin-top: 44px;
+  text-decoration: none;
 }
 
-.nav button {
+.head .menu {
   background-color: #fff;
   border: none;
   margin-right: 36px;
@@ -63,6 +64,7 @@
   font-size: 40px;
   text-align: justify;
   margin-left: 24px;
+  margin-top: -8px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -92,7 +94,7 @@
   flex-grow: 0;
   width: 170.17px;
   height: 20px;
-  margin-top: 25px;
+  margin-top: 6px;
   margin-left: -15px;
   justify-content: space-between;
   list-style: none;
@@ -105,10 +107,14 @@
   width: 117px;
   height: 24px;
   margin-left: 24px;
-  margin-top: 12px;
+  margin-top: 26px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+}
+
+.main_headline .social a {
+  text-decoration: none;
 }

@@ -7,7 +7,6 @@
 .first_section {
   width: 375px;
   height: 718px;
-
 }
 
 .head {
@@ -122,28 +121,27 @@
   display: grid;
   justify-content: center;
   flex-direction: column;
-  padding: 130px 0px;
+  padding: 130px;
   gap: 88px;
   position: absolute;
   width: 375px;
   height: 2788px;
-  left: 0px;
   top: 718px;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
 }
 
-.card_1{
+.card_1 {
   box-sizing: border-box;
   width: 327px;
   height: 552px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 .pic {
   width: 295px;
   height: 220px;
@@ -152,11 +150,11 @@
   margin-top: 30px;
 }
 
-.tonic-1{
+.tonic-1 {
   flex: none;
   order: 0;
   flex-grow: 0;
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -170,7 +168,7 @@
   align-items: center;
   list-style: none;
   justify-content: space-between;
-  color: #7A869A;
+  color: #7a869a;
   font-weight: 600;
   font-size: 13px;
   order: 0;
@@ -205,7 +203,6 @@
   flex-direction: row;
   align-items: center;
   list-style: none;
-  padding: 0px;
   gap: 20px;
   width: 214px;
   height: 24px;
@@ -217,15 +214,14 @@
 }
 
 .box {
-  background: #EBEBFF;
+  background: #ebebff;
   box-sizing: border-box;
   border-radius: 8px;
-  color: #6070FF;
+  color: #6070ff;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   padding: 4px 12px;
-
 }
 
 button span {
@@ -234,10 +230,10 @@ button span {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   gap: 10px;
-  color: #6070FF;
+  color: #6070ff;
   position: absolute;
   width: 126px;
   height: 48px;
@@ -246,23 +242,23 @@ button span {
   background: white;
 }
 
-.card_2{
+.card_2 {
   box-sizing: border-box;
   width: 327px;
   height: 596px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card_2 .tonic-1{
+.card_2 .tonic-1 {
   flex: none;
   order: 0;
   flex-grow: 0;
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -271,7 +267,7 @@ button span {
 }
 
 button span:hover {
-  background-color:blue;
+  background-color: blue;
   color: white;
 }
 
@@ -283,7 +279,6 @@ button span:hover {
   width: 375px;
   height: 1062.15px;
   top: 3486px;
-  left: 0px;
   margin-top: 230px;
 }
 
@@ -305,7 +300,7 @@ button span:hover {
   padding-top: 90px;
 }
 
-.about .about-me{
+.about .about-me {
   position: relative;
   margin-top: -790px;
 }
@@ -364,7 +359,6 @@ button span:hover {
   padding-top: 0.313em;
   padding-left: 0.313em;
   padding-bottom: 0.313em;
-  font-size: 0.938;
   margin-left: 120px;
 }
 
@@ -375,7 +369,6 @@ button span:hover {
 }
 
 .grp {
-  margin-top: 0px;
   margin-left: -230px;
 }
 
@@ -385,5 +378,4 @@ button span:hover {
   margin-top: -20px;
   margin-right: 28px;
   margin-bottom: auto;
-  margin-left: 0px;
 }

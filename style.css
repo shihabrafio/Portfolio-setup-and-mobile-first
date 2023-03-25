@@ -27,15 +27,15 @@
   font-size: 18px;
   line-height: 20px;
   margin-left: 24px;
-  margin-top: 44px;
+  margin-top: -140px;
   text-decoration: none;
 }
 
 .head .menu {
   background-color: #fff;
   border: none;
-  margin-right: 36px;
-  margin-top: 44px;
+  margin-right: 50px;
+  margin-top: -46px;
 }
 
 .main_headline {
@@ -49,7 +49,7 @@
   top: 0;
   background-image: url(./Properties/header-shapesmobile.png);
   background-size: cover;
-  position: absolute;
+  position: relative;
 }
 
 .main_headline h1 {
@@ -138,6 +138,7 @@
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
+  margin-left: -280px;
   flex-direction: column;
   align-items: center;
 }
@@ -250,6 +251,7 @@ button span {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
+  margin-left: -280px;
   flex-direction: column;
   align-items: center;
 }

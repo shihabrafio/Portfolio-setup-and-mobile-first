@@ -9,8 +9,16 @@
   height: 718px;
 }
 
-.head {
+.flex-row {
   display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
   justify-content: space-between;
   position: absolute;
   width: 375px;
@@ -18,7 +26,6 @@
 }
 
 .head a {
-  display: flex;
   align-items: center;
   text-align: center;
   color: #6070ff;
@@ -39,12 +46,11 @@
 }
 
 .main_headline {
-  display: flex;
   flex-direction: column;
-  text-align: center;
   width: 375px;
   height: 587.15px;
   margin-top: 103px;
+  margin-left: -8px;
   left: 0;
   top: 0;
   background-image: url(./Properties/header-shapesmobile.png);
@@ -87,7 +93,6 @@
 }
 
 .social-media {
-  display: flex;
   order: 3;
   flex-grow: 0;
   width: 170.17px;
@@ -128,6 +133,7 @@
   height: 2788px;
   top: 718px;
   background-color: #f7f7f9;
+  background-size: auto;
 }
 
 .card_1 {
@@ -138,7 +144,7 @@
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
-  margin-left: -280px;
+  margin-left: -270px;
   flex-direction: column;
   align-items: center;
 }
@@ -164,8 +170,6 @@
 }
 
 .page {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   list-style: none;
   justify-content: space-between;
@@ -200,8 +204,6 @@
 }
 
 .other-tags {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   list-style: none;
   gap: 20px;
@@ -210,7 +212,7 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin-left: -80px;
+  margin-left: -120px;
   margin-top: -4px;
 }
 
@@ -227,8 +229,6 @@
 
 button span {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 12px;
   border: 1px solid #6070ff;
@@ -236,7 +236,7 @@ button span {
   gap: 10px;
   color: #6070ff;
   position: absolute;
-  width: 126px;
+  width: 100px;
   height: 48px;
   margin-top: 114px;
   margin-left: -146px;
@@ -251,7 +251,7 @@ button span {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: flex;
-  margin-left: -280px;
+  margin-left: -270px;
   flex-direction: column;
   align-items: center;
 }
@@ -273,15 +273,24 @@ button span:hover {
   color: white;
 }
 
+button span:disabled {
+  background-color: red;
+}
+
+button span:active {
+  background: #e05304;
+  border: none;
+  color: #fff;
+}
+
 .about {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   position: absolute;
   width: 375px;
   height: 1062.15px;
   top: 3486px;
   margin-top: 230px;
+  margin-left: -10px;
 }
 
 .about h1 {
@@ -310,7 +319,7 @@ button span:hover {
 .resume button span {
   margin-top: 140px;
   margin-left: -164px;
-  width: 162px;
+  width: 130px;
   height: 48px;
 }
 

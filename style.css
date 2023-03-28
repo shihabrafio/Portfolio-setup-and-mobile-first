@@ -409,3 +409,22 @@ button span:active {
   justify-content: center;
   list-style: none;
 }
+
+.contact-me {
+  position: absolute;
+  width: 376px;
+  height: 779px;
+  left: -1px;
+  top: 4750px;
+  background-color: #6070ff;
+  background-image: url("./Properties/contactformshapes-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 156px 24px;
+  border-top-left-radius: 100px;
+}
+
+.contact-me li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}

@@ -208,6 +208,10 @@ button {
   align-items: center;
 }
 
+.card-image{
+  width: 100%;
+}
+
 .card_2 .tonic-1 {
   flex: none;
   color: #172b4d;

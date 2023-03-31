@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  margin-left: 0%;
+}
+
 .first_section {
   width: 100%;
   height: 696px;
@@ -51,10 +55,9 @@
 
 .main_headline h1 {
   flex: none;
-  width: 327px;
+  overflow-wrap: break-word;
   font-weight: 700;
   font-size: 40px;
-  text-align: justify;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -68,8 +71,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #344563; 
+  color: #344563;
   text-align: justify;
+  margin-left: 20%;
 }
 
 .social-media {
@@ -77,7 +81,8 @@
   height: 20px;
   justify-content: space-between;
   list-style: none;
-  margin-right: 40px;
+  margin-right: 60px;
+  padding-left: 1px;
 }
 
 .social {
@@ -99,6 +104,7 @@
   display: grid;
   width: 100%;
   background-color: #f7f7f9;
+
   /* padding: 120px 60px 0; */
 }
 
@@ -167,7 +173,7 @@
   margin-right: 100px;
   padding-bottom: 10px;
   padding-left: 32px;
-  margin-top: 0px;
+  margin-top: 0;
   width: 214px;
   height: 24px;
   flex: none;
@@ -193,7 +199,7 @@ button {
   width: 90px;
   height: 48px;
   background: white;
-  margin-right: 28px;
+  margin-left: 30px;
   margin-bottom: 20px;
 }
 
@@ -208,8 +214,9 @@ button {
   align-items: center;
 }
 
-.card-image{
+.card-image {
   width: 100%;
+  max-width: 544px;
 }
 
 .card_2 .tonic-1 {
@@ -236,6 +243,8 @@ button:active {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 100%;
 }
@@ -253,7 +262,7 @@ button:active {
 }
 
 .about .about-me {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .resume button {
@@ -282,7 +291,7 @@ button:active {
 }
 
 .code {
-  display: grid;
+  display: flex;
   list-style: none;
   align-items: center;
 }
@@ -296,19 +305,20 @@ button:active {
   border-radius: 0.5em;
 }
 
-          /* .prgm {
-            margin-top: 16px;
-            margin-left: 10px;
-          } */
+.prgm {
+  margin-top: 16px;
+  margin-left: 10px;
+}
 
-/* .grp {
+/*
+.grp {
   margin-left: -230px;
 } */
 
-/* .line {
+.line {
   margin-right: 28px;
   margin-bottom: auto;
-} */
+}
 
 .contact-me {
   width: 100%;
@@ -362,16 +372,14 @@ button:active {
 
 .contact-me button {
   color: #6070ff;
-}
-
-.contact-me button {
-  color: #6070ff;
   width: 116px;
   height: 48px;
 }
 
 section {
   width: 100%;
+  max-width: 1, 440px;
+
   /* background-color: red; */
 }
 
@@ -380,120 +388,78 @@ section {
     justify-content: space-between;
     height: 72px;
     margin-top: 40px;
-    /* margin-left: 140px; */
+  }
+
+  .head a {
+    margin-left: 10%;
   }
 
   .main_headline {
     background-image: url(./Properties/Headerbg.svg);
-    background-size: 91%;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 
   .menu img {
     display: none;
-
   }
-  
+
   .menu_items {
     display: flex;
     justify-content: space-between;
     text-align: center;
     width: 258px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-right: 260px;
-    margin-top: 0px;
-    /* margin-left: 200px; */
+    margin-top: 0;
   }
+
   .nav_items {
     list-style: none;
+    padding-left: 23%;
   }
 
   .main_headline h1 {
     flex: none;
     font-weight: 700;
     font-size: 48px;
-    text-align: justify;
     line-height: 60px;
     display: flex;
     align-items: center;
     color: #172b4d;
+    margin-left: 20%;
+    margin-top: 15%;
+    margin-bottom: 1%;
   }
-  
-  .about-me {
+
+  .about-me p {
     flex: none;
-    width: 327px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #344563; 
-    text-align: justify;
+    color: #344563;
   }
-  
+
   .social-media {
     width: 170.17px;
     height: 20px;
     justify-content: space-between;
     list-style: none;
     margin-right: 40px;
+    margin-bottom: 20%;
+    margin-left: 20%;
   }
-  
-  .social {
-    flex: none;
-    width: 117px;
-    height: 24px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
-  }
-  
+
   .social a {
     text-decoration: none;
   }
-  
+
   .main_container {
     display: grid;
-    width: 84%;
+    width: 100%;
     background-color: #f7f7f9;
-    /* padding: 120px  60px 0; */
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .card_1 {
     box-sizing: border-box;
@@ -507,16 +473,16 @@ section {
     margin: 80px;
     padding: 24px;
   }
-  
+
   .work {
     display: none;
   }
+
   .pic {
-    width: 295px;
     display: flex;
     align-items: center;
   }
-  
+
   .tonic-1 {
     flex: none;
     color: #172b4d;
@@ -528,7 +494,7 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
+
   .page {
     align-items: center;
     list-style: none;
@@ -539,12 +505,12 @@ section {
     width: 237px;
     margin-right: 80px;
   }
-  
+
   .page .title_1 {
     color: #344563;
     flex: none;
   }
-  
+
   .Text {
     color: #344563;
     font-weight: 400;
@@ -552,21 +518,21 @@ section {
     line-height: 24px;
     flex: none;
     margin-left: 26px;
-    padding-right: 50px;
+    padding-right: 40%;
   }
-  
+
   .other-tags {
     align-items: center;
     list-style: none;
     gap: 20px;
     margin-right: 100px;
     padding-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 0;
     width: 214px;
     height: 24px;
     flex: none;
   }
-  
+
   .box {
     background: #ebebff;
     box-sizing: border-box;
@@ -577,7 +543,7 @@ section {
     line-height: 16px;
     padding: 4px 12px;
   }
-  
+
   button {
     box-sizing: border-box;
     align-items: center;
@@ -590,7 +556,7 @@ section {
     margin-left: 28px;
     margin-bottom: 20px;
   }
-  
+
   .card_2 {
     box-sizing: border-box;
     width: 81%;
@@ -603,12 +569,171 @@ section {
     margin: 80px;
     padding: 24px;
   }
-  
+
   .card_2 .tonic-1 {
     flex: none;
     color: #172b4d;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+  }
+
+  .contact-me {
+    width: 100%;
+    height: 800px;
+    background-color: #6070ff;
+    background-image: url("./Properties/contact form background shapes.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    border-top-left-radius: 100px;
+    text-align: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: 20%;
+  }
+
+  .about h1 {
+    flex: none;
+    width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 52px;
+    padding-right: 50%;
+    color: #172b4d;
+    margin-bottom: 2%;
+  }
+
+  .about-me {
+    margin-top: 1px;
+    padding-right: 0%;
+  }
+
+  .about-list {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .about-list h4 {
+    text-align: left;
+  }
+
+  .about-list li {
+    font-weight: 500;
+  }
+
+  .social .social-media {
+    margin-bottom: 1px;
+  }
+
+  .code {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 2%;
+    text-align: left;
+  }
+
+  .grp {
+    margin-left: 0;
+    display: inline-block;
+    padding: 10% 40% 20% 10%;
+  }
+
+  .code li {
+    box-sizing: border-box;
+    background-color: #f7f7f9;
+    width: 45%;
+    column-gap: 45px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 0.5em;
+    margin-right: 3%;
+  }
+
+  .line {
+    margin-right: 28px;
+    margin-bottom: auto;
+  }
+
+  .contact-me li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .contact-me h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-left: 40%;
+    padding-left: 1%;
+    padding-top: 8%;
+  }
+
+  .contact-me p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 30%;
+    padding-right: 30%;
+  }
+
+  .contact-me button {
+    color: #6070ff;
+    width: 116px;
+    height: 48px;
+    margin-left: 42%;
+  }
+
+  .social {
+    margin-left: 20%;
+  }
+
+  .about .social {
+    margin-left: 0;
+  }
+
+  .about .social-media {
+    margin-left: 0.1%;
+  }
+
+  .about p {
+    margin-left: -20%;
+    padding-right: 14%;
+    margin-bottom: 2%;
+  }
+
+  .resume button {
+    margin-left: -1px;
+  }
+
+  .drop-down {
+    position: absolute;
+    margin-top: -4%;
+    padding-left: 24%;
+  }
+
+  #msg,
+  #mail,
+  #name {
+    width: 30%;
+    height: 40px;
+    margin-bottom: 1%;
+  }
+
+  #msg {
+    height: 200px;
   }
 }

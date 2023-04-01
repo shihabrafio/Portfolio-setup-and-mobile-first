@@ -729,6 +729,18 @@ section {
     margin-bottom: 2%;
   }
 
+  .card-image,
+  button {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .card-image:hover,
+  button:hover {
+    transform: scale(1.08);
+  }
+
   .contact-me button {
     color: #6070ff;
     width: 116px;
@@ -776,15 +788,5 @@ section {
   #msg {
     padding-top: 1%;
     height: 200px;
-  }
-
-  .card-image, button {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-  }
-  
- .card-image:hover, button:hover {
-    transform: scale(1.08);
   }
 }

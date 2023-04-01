@@ -289,6 +289,12 @@ button:active {
 
 .about-list {
   margin-left: -4%;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-bottom: 10%;
 }
 
 .resume button {
@@ -296,15 +302,6 @@ button:active {
   height: 48px;
   margin-left: 5%;
   margin-top: -40%;
-}
-
-.about-list {
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding-bottom: 10%;
 }
 
 .about-list h4 {
@@ -723,13 +720,6 @@ section {
     margin-bottom: 2%;
   }
 
-  .contact-me button {
-    color: #6070ff;
-    width: 116px;
-    height: 48px;
-    margin-left: 47%;
-  }
-
   .social {
     margin-left: 20%;
   }
@@ -746,10 +736,6 @@ section {
     margin-left: -20%;
     padding-right: 14%;
     margin-bottom: 2%;
-  }
-
-  .resume button {
-    margin-left: -1px;
   }
 
   .drop-down {
@@ -771,13 +757,26 @@ section {
     height: 200px;
   }
 
-  .card-image {
+  .card-image,
+  button {
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
   }
 
-  .card-image:hover{
+  .card-image:hover,
+  button:hover {
     transform: scale(1.08);
+  }
+
+  .contact-me button {
+    color: #6070ff;
+    width: 116px;
+    height: 48px;
+    margin-left: 47%;
+  }
+
+  .resume button {
+    margin-left: -1px;
   }
 }

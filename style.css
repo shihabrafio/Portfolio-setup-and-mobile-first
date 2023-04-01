@@ -770,4 +770,11 @@ section {
   #msg {
     height: 200px;
   }
+
+  .card-image {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+
 }

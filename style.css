@@ -22,14 +22,15 @@ body {
   flex-direction: column;
 }
 
-.pic {
+.pic,
+.menu_items {
   display: none;
 }
 
 .head {
   justify-content: space-between;
   height: 72px;
-  margin-top: 40px;
+  margin-top: 10%;
 }
 
 .head a {
@@ -40,17 +41,20 @@ body {
   line-height: 20px;
   text-decoration: none;
   background-color: #fff;
+  padding-left: 5%;
 }
 
 .head .menu {
   background-color: #fff;
   border: none;
+  padding-right: 6%;
 }
 
 .main_headline {
-  width: 100%;
   background-image: url(./Properties/header-shapesmobile.png);
   background-size: cover;
+  width: 100%;
+  height: 587.15px;
 }
 
 .main_headline h1 {
@@ -62,6 +66,8 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
+  padding-top: 20%;
+  padding-left: 5%;
 }
 
 .about-me {
@@ -73,7 +79,13 @@ body {
   line-height: 24px;
   color: #344563;
   text-align: justify;
-  margin-left: 20%;
+  margin-left: 0%;
+  padding-left: 5%;
+}
+
+.about-me p {
+  overflow-wrap: break-word;
+  margin-top: -10%;
 }
 
 .social-media {
@@ -82,7 +94,8 @@ body {
   justify-content: space-between;
   list-style: none;
   margin-right: 60px;
-  padding-left: 1px;
+  padding-left: 5%;
+  padding-bottom: 40%;
 }
 
 .social {
@@ -94,6 +107,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin-left: 5%;
 }
 
 .social a {
@@ -104,13 +118,12 @@ body {
   display: grid;
   width: 100%;
   background-color: #f7f7f9;
-
-  /* padding: 120px 60px 0; */
+  padding-top: 10%;
 }
 
 .card_1 {
   box-sizing: border-box;
-  width: 100%;
+  width: 327px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -118,12 +131,16 @@ body {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 3%;
 }
 
 .work {
-  width: 295px;
+  max-width: 295px;
   display: flex;
   align-items: center;
+  margin-top: 10%;
 }
 
 .tonic-1 {
@@ -212,6 +229,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 5%;
+  margin-top: 15%;
+  margin-bottom: 3%;
 }
 
 .card-image {
@@ -259,15 +279,23 @@ button:active {
   display: flex;
   align-items: center;
   color: #172b4d;
+  padding-top: 30%;
+  padding-left: 5%;
 }
 
 .about .about-me {
   margin-top: 0;
 }
 
+.about-list {
+  margin-left: -4%;
+}
+
 .resume button {
   width: 130px;
   height: 48px;
+  margin-left: 5%;
+  margin-top: -40%;
 }
 
 .about-list {
@@ -276,6 +304,7 @@ button:active {
   display: flex;
   flex-direction: column;
   list-style: none;
+  padding-bottom: 10%;
 }
 
 .about-list h4 {
@@ -287,13 +316,17 @@ button:active {
 }
 
 .drop-down {
-  float: right;
+  position: absolute;
+  margin-top: -14%;
+  padding-left: 24%;
 }
 
 .code {
   display: flex;
+  flex-direction: column;
   list-style: none;
-  align-items: center;
+  text-align: left;
+  padding-left: 0%;
 }
 
 .code li {
@@ -303,17 +336,13 @@ button:active {
   line-height: 20px;
   font-weight: 500;
   border-radius: 0.5em;
+  margin-bottom: 3%;
 }
 
 .prgm {
   margin-top: 16px;
   margin-left: 10px;
 }
-
-/*
-.grp {
-  margin-left: -230px;
-} */
 
 .line {
   margin-right: 28px;
@@ -325,14 +354,9 @@ button:active {
   background-color: #6070ff;
   background-image: url("./Properties/contactformshapes-mobile.png");
   background-repeat: no-repeat;
-  background-position: 156px 24px;
+  background-position: 100% 30%;
   border-top-left-radius: 100px;
-}
-
-.contact-me li {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  height: 880px;
 }
 
 .contact-me h1 {
@@ -340,6 +364,8 @@ button:active {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  padding-top: 40%;
+  padding-left: 14%;
 }
 
 .contact-me p {
@@ -348,6 +374,7 @@ button:active {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+  margin-bottom: 15%;
 }
 
 #msg,
@@ -360,6 +387,8 @@ button:active {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+  margin-left: 4%;
+  margin-bottom: 2%;
 }
 
 #msg {
@@ -374,6 +403,7 @@ button:active {
   color: #6070ff;
   width: 116px;
   height: 48px;
+  margin-left: 5%;
 }
 
 section {
@@ -428,7 +458,7 @@ section {
     align-items: center;
     color: #172b4d;
     margin-left: 20%;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-bottom: 1%;
   }
 
@@ -606,11 +636,13 @@ section {
     padding-right: 50%;
     color: #172b4d;
     margin-bottom: 2%;
+    padding-left: 20%;
   }
 
   .about-me {
     margin-top: 1px;
     padding-right: 0%;
+    margin-left: 20%;
   }
 
   .about-list {
@@ -676,7 +708,7 @@ section {
     font-size: 40px;
     line-height: 52px;
     margin-left: 40%;
-    padding-left: 1%;
+    padding-left: 3%;
     padding-top: 8%;
   }
 
@@ -686,15 +718,16 @@ section {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    margin-left: 30%;
-    padding-right: 30%;
+    margin-left: 34%;
+    padding-right: 28%;
+    margin-bottom: 2%;
   }
 
   .contact-me button {
     color: #6070ff;
     width: 116px;
     height: 48px;
-    margin-left: 42%;
+    margin-left: 47%;
   }
 
   .social {
@@ -721,7 +754,7 @@ section {
 
   .drop-down {
     position: absolute;
-    margin-top: -4%;
+    margin-top: 0%;
     padding-left: 24%;
   }
 
@@ -731,6 +764,7 @@ section {
     width: 30%;
     height: 40px;
     margin-bottom: 1%;
+    margin-left: 4%;
   }
 
   #msg {

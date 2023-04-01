@@ -777,4 +777,7 @@ section {
     transition-timing-function: ease-in-out;
   }
 
+  .card-image:hover{
+    transform: scale(1.08);
+  }
 }

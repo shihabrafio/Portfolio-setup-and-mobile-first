@@ -73,7 +73,8 @@ body {
   padding-left: 5%;
 }
 
-.about-me {
+.about-me,
+.about-me_1 {
   flex: none;
   width: 327px;
   font-style: normal;
@@ -84,11 +85,6 @@ body {
   text-align: justify;
   margin-left: 0%;
   padding-left: 5%;
-}
-
-.about-me p {
-  overflow-wrap: break-word;
-  margin-top: -10%;
 }
 
 .social-media {
@@ -219,7 +215,7 @@ button {
   width: 90px;
   height: 48px;
   background: white;
-  margin-left: 4%;
+  margin-left: 10%;
   margin-bottom: 20px;
 }
 
@@ -286,7 +282,7 @@ button:active {
   padding-left: 5%;
 }
 
-.about .about-me {
+.about-me_1 {
   margin-top: 0;
 }
 
@@ -304,11 +300,12 @@ button:active {
   flex-direction: column;
   list-style: none;
   padding-bottom: 10%;
-  margin-left: -20%;
+  margin-left: -6%;
 }
 
 .about-list h4 {
   text-align: left;
+  padding-bottom: -40%;
 }
 
 .about-list li {
@@ -319,6 +316,11 @@ button:active {
   position: absolute;
   margin-top: -14%;
   padding-left: 24%;
+}
+
+.pgrm {
+  padding-top: -40%;
+  margin-left: 40%;
 }
 
 .code {
@@ -341,7 +343,7 @@ button:active {
 
 .prgm {
   margin-top: 16px;
-  margin-left: 10px;
+  padding-left: 6%;
 }
 
 .line {
@@ -364,7 +366,7 @@ button:active {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  padding-top: 40%;
+  padding-top: 30%;
   padding-left: 14%;
 }
 
@@ -375,6 +377,11 @@ button:active {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 15%;
+}
+
+.box_desk span,
+.box_desk {
+  display: none;
 }
 
 #msg,
@@ -459,18 +466,20 @@ section {
     display: flex;
     align-items: center;
     color: #172b4d;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: -4%;
     margin-bottom: 4%;
   }
 
-  .about-me p {
+  .about-me_1 {
     flex: none;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
+    padding-left: 20%;
+    margin-top: -10%;
   }
 
   .social-media {
@@ -480,13 +489,14 @@ section {
     list-style: none;
     margin-right: 40px;
     margin-bottom: 20%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .social {
     text-decoration: none;
     padding-left: 5%;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-top: -4%;
   }
 
   .main_container {
@@ -631,6 +641,28 @@ section {
     margin-left: 14%;
   }
 
+  .about-me {
+    width: 50%;
+    height: 20%;
+    margin-top: -4%;
+    padding-right: 0%;
+    margin-left: 15%;
+  }
+
+  .box,
+  .box_desk,
+  .box_desk span {
+    display: inline-block;
+    background: #ebebff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px;
+  }
+
   .about h1 {
     flex: none;
     width: 100%;
@@ -638,14 +670,8 @@ section {
     font-size: 40px;
     text-align: center;
     line-height: 52px;
-    padding-right: 50%;
+    padding-left: 0%;
     color: #172b4d;
-  }
-
-  .about-me {
-    margin-top: 1px;
-    padding-right: 0%;
-    margin-left: 20%;
   }
 
   .about-list {
@@ -749,12 +775,15 @@ section {
   }
 
   .about .social {
-    margin-left: 0;
+    margin-left: 0%;
+    padding-left: 0%;
+    margin-top: 2%;
   }
 
   .about .social-media {
-    margin-left: 0.1%;
-    padding-bottom: 26%;
+    margin-left: 0%;
+    padding-bottom: 20%;
+    padding-left: 0%;
   }
 
   .about p {
@@ -764,9 +793,8 @@ section {
   }
 
   .resume button {
-    margin-left: 4%;
-    padding-right: -5%;
-    margin-bottom: 20%;
+    margin-left: 0%;
+    margin-top: -30%;
   }
 
   .drop-down {

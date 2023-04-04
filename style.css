@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
 body {
   margin-left: 0%;
   display: flex;

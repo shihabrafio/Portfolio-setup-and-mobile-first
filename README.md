@@ -28,6 +28,8 @@
 
 **Portfolio: setup and mobile first** is a simple HTML and CSS pages used with flexbox and linters.
 
+[Project Presentation](https://www.loom.com/share/cf89d47af39c4508a02ba75bdbd102e1)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

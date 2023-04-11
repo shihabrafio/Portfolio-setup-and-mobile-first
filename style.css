@@ -28,6 +28,7 @@ body {
   a {
     text-decoration: none;
   }
+
   #ham-menu {
     font-family: "Inter", sans-serif;
     position: absolute;
@@ -36,7 +37,7 @@ body {
     width: 375px;
     text-align: left;
     z-index: 99;
-    background-color: #6070FF;
+    background-color: #6070ff;
     mix-blend-mode: multiply;
     backdrop-filter: blur(6px);
   }
@@ -52,7 +53,7 @@ body {
     color: white;
     font-size: 32px !important;
   }
-  
+
   #x {
     position: absolute;
     margin-left: 300px;

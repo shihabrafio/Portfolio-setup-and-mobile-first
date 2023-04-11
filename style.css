@@ -28,6 +28,29 @@ body {
   a {
     text-decoration: none;
   }
+  #ham-menu {
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    top: -2%;
+    height: 882px;
+    width: 375px;
+    text-align: left;
+    z-index: 99;
+    background-color: #6070FF;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(6px);
+  }
+  .ham-items {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6%;
+    line-height: 44px;
+    font-weight: 600;
+    color: white;
+    font-size: 32px !important;
+  }
 }
 
 .first_section {

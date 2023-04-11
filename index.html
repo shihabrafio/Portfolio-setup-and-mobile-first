@@ -10,10 +10,36 @@
 
   <body>
     <section class="first_Section">
+      <div id="ham-menu">
+        <img
+          onclick="clickX()"
+          id="x"
+          src="https://img.icons8.com/sf-regular/48/FFFFFF/multiply.png"
+        />
+        <ul>
+          <li>
+            <a href="#portfolio" class="ham-items" onclick="clickX()"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="ham-items" onclick="clickX()">About</a>
+          </li>
+          <li>
+            <a href="#contact" class="ham-items" onclick="clickX()">Contact</a>
+          </li>
+        </ul>
+      </div>
       <header class="head flex-row">
         <a class="flex-row" href="http://">My Logo</a>
         <nav class="menu">
-          <img src="./Properties/Icon - Menu.png" alt="Menu Logo" />
+          <img
+            onclick="clickMenu()"
+            id="menu"
+            src="./Properties/Icon - Menu.png"
+            alt="Menu Logo"
+            class="menu-logo"
+          />
           <ul class="menu_items">
             <li class="nav_items">Portfolio</li>
             <li class="nav_items">About</li>
@@ -24,7 +50,8 @@
       <section class="main_headline flex-column">
         <h1>
           I'm Rafio.<br />
-          Glad to see you!
+          Glad to see <br />
+          you!
         </h1>
         <div class="about-me">
           <p>
@@ -34,7 +61,7 @@
             contact me.
           </p>
         </div>
-        <div class="social"><a href="#">LET'S CONNECT</a></div>
+        <div class="social blr"><a href="#">LET'S CONNECT</a></div>
         <ul class="social-media flex-row">
           <li>
             <a href="http://twitter.com"
@@ -64,7 +91,7 @@
         </ul>
       </section>
     </section>
-    <section class="main_container">
+    <section class="main_container" id="portfolio">
       <div class="card_1">
         <a class="work"
           ><img src="./Properties/Work 1.svg" alt="work demo"
@@ -94,7 +121,9 @@
         </div>
       </div>
       <div class="card_2">
-        <a class="work"><img src="./Properties/Work 2.svg" alt="Work demo" /></a>
+        <a class="work"
+          ><img src="./Properties/Work 2.svg" alt="Work demo"
+        /></a>
         <a class="pic"
           ><img class="card-image" src="./Properties/pic_2.png" alt="work demo"
         /></a>
@@ -187,7 +216,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="row_1 flex-column">
         <h1>About Myself</h1>
         <div class="about-me_1">
@@ -288,7 +317,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
       <h1 class="flex-row">Contact me</h1>
       <p class="flex-row">
         If you have an application you are interested in developing, a feature
@@ -332,5 +361,6 @@
         </button>
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -16,6 +16,20 @@ body {
   justify-content: center;
 }
 
+#ham-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
 .first_section {
   width: 100%;
   height: 696px;

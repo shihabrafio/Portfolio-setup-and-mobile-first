@@ -141,6 +141,9 @@ projects.forEach((project) => {
     </div>
     
     </div>`;
+    if(count===2){
+      count--;
+    }
     count++;
     cardSection.append(newDiv);
 });

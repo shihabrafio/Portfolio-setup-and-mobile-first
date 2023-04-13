@@ -273,21 +273,6 @@ body {
   margin-bottom: 3%;
 }
 
-.card_3 {
-  box-sizing: border-box;
-  width: 327px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10%;
-  margin-left: 5%;
-  margin-bottom: 3%;
-}
-
 .work {
   max-width: 295px;
   display: flex;

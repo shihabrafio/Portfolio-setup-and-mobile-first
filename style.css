@@ -76,8 +76,8 @@ body {
   padding: 8px 12px;
   text-align: center;
   background-color: #fff;
+  width: fit-content;
 }
-
 
 /* end code */
 
@@ -141,6 +141,10 @@ body {
   }
 
   .card_desk {
+    display: none;
+  }
+
+  .ignore-desk {
     display: none;
   }
 }
@@ -269,6 +273,21 @@ body {
   margin-bottom: 3%;
 }
 
+.card_3 {
+  box-sizing: border-box;
+  width: 327px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
 .work {
   max-width: 295px;
   display: flex;
@@ -351,6 +370,7 @@ button {
   background: white;
   margin-left: 10%;
   margin-bottom: 20px;
+  width: fit-content;
 }
 
 .card_2 {
@@ -735,6 +755,7 @@ section {
     background: white;
     margin-left: 6%;
     margin-bottom: 20px;
+    width: fit-content;
   }
 
   .card_2 {
@@ -953,6 +974,10 @@ section {
     height: 200px;
   }
 
+  .ignore-mbl {
+    display: none;
+  }
+
   .card_desk {
     display: none;
     width: 1156px;
@@ -970,8 +995,13 @@ section {
     position: fixed;
     top: 0px;
     bottom: 0px;
-    background: #C1C7D0;
+    background: #c1c7d0;
     mix-blend-mode: multiply;
     backdrop-filter: blur(5px);
+  }
+
+  .explain {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -8,6 +8,78 @@ html,
 body {
   overflow-x: hidden;
 }
+/* start code */
+
+#overlay1 .active {
+  filter: blur(8px);
+}
+
+.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c1c7d0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.over.active {
+  opacity: 0.6;
+  pointer-events: all;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: fixed;
+  transform: translate(1%, 1%);
+  background-color: white;
+  border-radius: 16px;
+  overflow: scroll;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  z-index: 10;
+}
+
+.popup::-webkit-scrollbar {
+  display: none;
+}
+
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+.titles {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.see {
+  color: #396df2;
+  border-radius: 8px;
+  border: 1px #6070ff solid;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  word-spacing: 3px;
+  margin-top: -4px;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+/* end code */
 
 body {
   margin-left: 0%;

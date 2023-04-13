@@ -141,20 +141,12 @@ projects.forEach((project) => {
     </div>
     
     </div>`;
-    if(count===2){
+    if(count==2){
       count--;
-    }
-    count++;
+    }else{
+    count++;}
     cardSection.append(newDiv);
 });
-
-// const image = document.querySelectorAll('.image');
-// image.forEach((im) => {
-//   if (count % 2 === 0) {
-//     im.classList.add('two');
-//   }
-//   count += 1;
-// });
 
 const seeproject = document.querySelectorAll('.see');
 const overlay = document.getElementById('overlay1');

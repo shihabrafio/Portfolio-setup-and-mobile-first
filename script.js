@@ -10,7 +10,6 @@ function clickX() {
   menu.style.display = 'block';
 }
 
-
 const projects = [
   {
     id: 'Project1',
@@ -37,7 +36,7 @@ const projects = [
   },
   {
     id: 'Project2',
-    title: 'Multi-Post',
+    title: 'Multi-Post<br>Stories',
     title1: 'Multi-Post',
     company: 'CANOPY',
     company1: 'FACEBOOK',
@@ -107,9 +106,9 @@ const projects = [
 ];
 
 // let count = 1;
-let count=1;
+let count = 1;
 projects.forEach((project) => {
- const newDiv = document.createElement('div');
+  const newDiv = document.createElement('div');
   newDiv.innerHTML = `
     <div class="card_${count}">
     <div class="card-image">
@@ -141,11 +140,12 @@ projects.forEach((project) => {
     </div>
     
     </div>`;
-    if(count==2){
-      count--;
-    }else{
-    count++;}
-    cardSection.append(newDiv);
+  if (count === 2) {
+    count -= 1;
+  } else {
+    count += 1;
+  }
+  cardSection.append(newDiv);
 });
 
 const seeproject = document.querySelectorAll('.see');
@@ -154,16 +154,16 @@ const popup = document.querySelector('.popup');
 const over = document.querySelector('.over');
 seeproject.forEach((p) => p.addEventListener('click', (p) => {
   const { id } = p.target;
-  const pop = projects.find((p) => p.id === id);  
+  const pop = projects.find((p) => p.id === id);
   popup.innerHTML = `
   <div class="titles">
     <div class="flex-row" style="justify-content:space-between;">
-      <h2 class="tonic-1 ignore-mbl">${pop.title}</h2>
+      <h2 class="tonic-1 ignore-mbl" style="padding-left:6%">${pop.title}</h2>
       <h2 class="tonic-1 ignore-desk">${pop.title1}</h2>
       <button class="close" style="border-color:white;">&times;</button>
     </div>
     <div class="Card_text flex-column">
-    <ul class="page flex-row">
+    <ul class="page flex-row" style="padding-left:7%">
       <li class="title_1 ignore-mbl">${pop.company}</li>
       <li class="title_1 ignore-desk">${pop.company1}</li>
       <li><img src="${pop.icon}" alt="Dot icon" ></li>
@@ -173,24 +173,24 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
       <li>${pop.year}</li>
     </ul>
     </div>
-    <img src="${pop.imageMobile}" alt="live" class="work">
+    <img src="${pop.imageMobile}" alt="live" class="work" style="padding-left:6%; margin-top:0%">
     <img src="${pop.imageDesktop}" alt="live" class="pic"  style="width:1256px; height:440px; margin: 20px;">
     <div class="explain">
       <p class="tonic-text2">
         ${pop.description1}
       </p>
       <div class="smart">
-          <ul class="other-tag flex-row">
+          <ul class="other-tag flex-row" style="padding-left:6%">
             <li class="box">${pop.technologies.tech1}</li>
             <li class="box_desk">${pop.technologies.techE}</li>
             <li class="box">${pop.technologies.tech2}</li>
             <li class="box">${pop.technologies.tech3}</li>
           </ul>
           <div class="btns">
-            <button type="button" id="live" class="but">See live &nbsp; &nbsp;
+            <button type="button" id="live" class="but">See live &nbsp;
               <img src="./Properties/source.svg" alt="live">
             </button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-            <button type="button" id="source" class="but">See source &nbsp; &nbsp;
+            <button type="button" id="source" class="but">See source &nbsp;
               <img src="./Properties/github.png" alt="source">
             </button>
           </div>

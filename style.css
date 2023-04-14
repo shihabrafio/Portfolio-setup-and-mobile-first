@@ -9,6 +9,89 @@ body {
   overflow-x: hidden;
 }
 
+/* start code */
+
+#overlay1 .active {
+  filter: blur(8px);
+}
+
+.over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c1c7d0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.over.active {
+  opacity: 0.6;
+  pointer-events: all;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: fixed;
+  transform: translate(1%, 1%);
+  background-color: white;
+  border-radius: 16px;
+  overflow: scroll;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  z-index: 10;
+}
+
+.popup::-webkit-scrollbar {
+  display: none;
+}
+
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+
+.titles {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.errors {
+  margin-left: 5%;
+  margin-bottom: 35px;
+  color: red;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.see {
+  color: #396df2;
+  border-radius: 8px;
+  border: 1px #6070ff solid;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  word-spacing: 3px;
+  margin-top: -4px;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: #fff;
+  width: fit-content;
+}
+
+/* end code */
+
 body {
   margin-left: 0%;
   display: flex;
@@ -20,6 +103,11 @@ body {
   display: none;
 }
 
+.but {
+  margin-left: 6%;
+  display: inline-flex;
+}
+
 @media only screen and (max-width: 600px) {
   li {
     list-style: none;
@@ -27,6 +115,12 @@ body {
 
   a {
     text-decoration: none;
+  }
+
+  .about .social {
+    padding-right: 210px;
+    padding-left: 0%;
+    margin-left: 1%;
   }
 
   #ham-menu {
@@ -68,13 +162,12 @@ body {
     padding-right: 10%;
   }
 
-  .errors {
-    margin-left: 5%;
-    margin-bottom: 35px;
-    color: red;
-    font-size: 16px;
-    background-color: white;
-    border-radius: 8px;
+  .card_desk {
+    display: none;
+  }
+
+  .ignore-desk {
+    display: none;
   }
 }
 
@@ -166,7 +259,7 @@ body {
 
 .social {
   flex: none;
-  width: 117px;
+  width: auto;
   height: 24px;
   font-style: normal;
   font-weight: 500;
@@ -207,6 +300,20 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10%;
+  padding-left: 5%;
+}
+
+.tonic-text2 {
+  margin-left: 7%;
+  margin-right: 4%;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  margin-right: 6%;
+  font-size: 30px;
+  margin-top: 3%;
 }
 
 .tonic-1 {
@@ -215,8 +322,6 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-right: 20px;
-  padding-right: 100px;
   padding-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -271,6 +376,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   padding: 4px 12px;
+  margin-right: 2px;
 }
 
 button {
@@ -279,11 +385,11 @@ button {
   border: 1px solid #6070ff;
   border-radius: 8px;
   color: #6070ff;
-  width: 90px;
   height: 48px;
   background: white;
   margin-left: 10%;
   margin-bottom: 20px;
+  width: fit-content;
 }
 
 .card_2 {
@@ -484,8 +590,6 @@ button:active {
 section {
   width: 100%;
   max-width: 1, 440px;
-
-  /* background-color: red; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -585,15 +689,7 @@ section {
     flex-direction: row;
     margin: 80px;
     padding: 24px;
-  }
-
-  .errors {
-    margin-left: 3%;
-    margin-bottom: 35px;
-    color: red;
-    font-size: 16px;
-    background-color: white;
-    border-radius: 8px;
+    justify-content: flex-start;
   }
 
   .work {
@@ -617,6 +713,14 @@ section {
     margin-bottom: 10px;
   }
 
+  .tonic-12 {
+    margin-top: 2%;
+  }
+
+  .close {
+    margin-right: 2%;
+  }
+
   .page {
     align-items: center;
     list-style: none;
@@ -626,6 +730,10 @@ section {
     font-size: 13px;
     width: 237px;
     margin-right: 80px;
+  }
+
+  .page12 {
+    margin-left: -4%;
   }
 
   .page .title_1 {
@@ -672,11 +780,11 @@ section {
     border: 1px solid #6070ff;
     border-radius: 8px;
     color: #6070ff;
-    width: 90px;
     height: 48px;
     background: white;
     margin-left: 6%;
     margin-bottom: 20px;
+    width: fit-content;
   }
 
   .card_2 {
@@ -690,6 +798,7 @@ section {
     align-items: center;
     margin: 80px;
     padding: 24px;
+    justify-content: space-between;
   }
 
   .card_2 .tonic-1 {
@@ -738,6 +847,12 @@ section {
     font-size: 12px;
     line-height: 16px;
     padding: 4px 12px;
+  }
+
+  .box_desk span {
+    width: 90px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .about h1 {
@@ -855,6 +970,7 @@ section {
     margin-left: 0%;
     padding-left: 0%;
     margin-top: 2%;
+    padding-right: 200px;
   }
 
   .about .social-media {
@@ -893,5 +1009,67 @@ section {
   #msg {
     padding-top: 1%;
     height: 200px;
+  }
+
+  .ignore-mbl {
+    display: none;
+  }
+
+  .card_desk {
+    display: none;
+    width: 1156px;
+    height: 1163px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1%;
+    background-color: white;
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #c1c7d0;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+  }
+
+  .explain {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tonic-text2 {
+    margin-left: 2%;
+    margin-right: 0%;
+    width: 72%;
+  }
+
+  .smart {
+    margin-left: 3%;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+  }
+
+  .errors {
+    margin-left: 3%;
+    margin-bottom: 35px;
+    color: red;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .but {
+    padding: 8px 10px;
+    width: 9rem;
+    padding-top: 4%;
+    display: inline-flex;
   }
 }

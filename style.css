@@ -8,6 +8,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
 /* start code */
 
 #overlay1 .active {
@@ -58,6 +59,7 @@ body {
   top: 5%;
   right: 5%;
 }
+
 .titles {
   position: sticky;
   top: 0;
@@ -309,6 +311,9 @@ body {
 .close {
   width: 20px;
   height: 20px;
+  margin-right: 6%;
+  font-size: 30px;
+  margin-top: 3%;
 }
 
 .tonic-1 {
@@ -317,8 +322,6 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-right: 20px;
-  padding-right: 100px;
   padding-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -719,6 +722,13 @@ section {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .tonic-12{
+    margin-top: 2%;
+  }
+
+  .close {
+    margin-right: 2%;
+  }
 
   .page {
     align-items: center;
@@ -730,6 +740,10 @@ section {
     width: 237px;
     margin-right: 80px;
   }
+  .page12{
+    margin-left: -4%;
+  }
+
 
   .page .title_1 {
     color: #344563;
@@ -1040,7 +1054,11 @@ section {
 
   .tonic-text2 {
     margin-left: 2%;
-    padding-right: 10%;
+    margin-right: 0%;
+    width: 72%;
+  }
+  .smart{
+    margin-left: 3%;
   }
 
   .btns {

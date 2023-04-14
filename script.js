@@ -155,9 +155,9 @@ projects.forEach((project) => {
     <p class="Text">
     ${project.description}
     </p>
-    <ul class="other-tags flex-row">
+    <ul class="other-tags flex-row primarytext33">
         <li class="box"><span>${project.technologies.tech1}</span></li>
-        <li class="box_desk"><span>${project.technologies.techE}</span></li>
+        <li class="box_desk "><span>${project.technologies.techE}</span></li>
         <li class="box"><span>${project.technologies.tech2}</span></li>
         <li class="box"><span>${project.technologies.tech3}</span></li>
     </ul>
@@ -184,13 +184,13 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   <div class="titles">
     <div class="flex-row" style="justify-content:space-between;">
       <h2 class="tonic-1 ignore-mbl" style="padding-left:6%">${pop.title}</h2>
-      <h2 class="tonic-1 ignore-desk">${pop.title1}</h2>
-      <button class="close" style="border-color:white;">&times;</button>
+      <h2 class="tonic-1 tonic-12  ignore-desk">${pop.title1}</h2>
+      <button class="close close12" style="border-color:white;">&times;</button>
     </div>
     <div class="Card_text flex-column">
-    <ul class="page flex-row" style="padding-left:7%">
+    <ul class="page page12 flex-row" style="padding-left:7%">
       <li class="title_1 ignore-mbl">${pop.company}</li>
-      <li class="title_1 ignore-desk">${pop.company1}</li>
+      <li class="title_1  ignore-desk">${pop.company1}</li>
       <li><img src="${pop.icon}" alt="Dot icon" ></li>
       <li class="ignore-mbl">${pop.specialization}</li>
       <li class="ignore-desk">${pop.specialization1}</li>
@@ -203,13 +203,20 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
     <div class="explain">
       <p class="tonic-text2">
         ${pop.description1}
+        <br class="ignore-desk">
+        <br class="ignore-desk">
+        <span class="ignore-desk">${pop.description1}</span>
       </p>
       <div class="smart">
           <ul class="other-tag flex-row" style="padding-left:6%">
             <li class="box">${pop.technologies.tech1}</li>
-            <li class="box_desk">${pop.technologies.techE}</li>
+            <li class="box_desk ignore-mbl">${pop.technologies.techE}</li>
             <li class="box">${pop.technologies.tech2}</li>
             <li class="box">${pop.technologies.tech3}</li>
+          </ul>
+          <ul class="other-tag flex-row" style="padding-left:6%">
+            <li class="box ignore-desk">Ruby</li>
+            <li class="box ignore-desk">Bootstrap</li>
           </ul>
           <div class="btns">
             <button type="button" id="live" class="but">See live &nbsp;

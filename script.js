@@ -174,7 +174,7 @@ const seeproject = document.querySelectorAll('.see');
 const overlay = document.getElementById('overlay1');
 const popup = document.querySelector('.popup');
 const over = document.querySelector('.over');
-seeproject.forEach(p) => p.addEventListener('click', (p) => {
+seeproject.forEach((p) => p.addEventListener('click', (p) => {
   const { id } = p.target;
   const pop = projects.find((p) => p.id === id);
   popup.innerHTML = `
@@ -225,4 +225,27 @@ seeproject.forEach(p) => p.addEventListener('click', (p) => {
           </div>
       </div>
   </div>  `;
-});
+
+  const live = document.getElementById('live');
+  const source = document.getElementById('source');
+
+  live.addEventListener('click', () => {
+    document.location.href = pop.live;
+  });
+
+  source.addEventListener('click', () => {
+    document.location.href = pop.source;
+  });
+
+  overlay.classList.toggle('active');
+  popup.classList.toggle('active');
+  over.classList.toggle('active');
+
+  const close = document.querySelector('.close');
+
+  close.addEventListener('click', () => {
+    popup.classList.remove('active');
+    over.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+}));

@@ -1,5 +1,6 @@
 const ham = document.getElementById('ham-menu');
 const menu = document.getElementById('menu');
+const cardSection = document.getElementById('portfolio');
 function clickMenu() {
   ham.style.display = 'block';
   menu.style.display = 'none';

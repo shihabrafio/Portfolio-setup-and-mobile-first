@@ -1053,6 +1053,7 @@ section {
 
   .btns {
     display: flex;
+    align-items: center;
   }
 
   .errors {
@@ -1065,6 +1066,6 @@ section {
   }
 
   .but {
-    width: fit-content;
+    width: 10rem;
   }
 }

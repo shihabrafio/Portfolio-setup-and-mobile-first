@@ -1066,6 +1066,9 @@ section {
   }
 
   .but {
-    width: 10rem;
+    padding: 8px 10px ;
+    width: 9rem;
+    padding-top: 4%;
+    display: inline-flex;
   }
 }
